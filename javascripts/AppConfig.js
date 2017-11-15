@@ -12,16 +12,16 @@ app.config(function($routeProvider){
       controller: 'loginCtrl'
     })
     .when("/view", {
-      templateUrl: 'partials/view.html',
+      templateUrl: 'partials/contacts/view.html',
       controller: 'viewCtrl'
     })
     .when("/new", {
-      templateUrl: 'partials/new.html',
+      templateUrl: 'partials/contacts/new.html',
       controller: 'newCtrl'
     })
     .when("/favorites", {
-      templateUrl: 'partials/favorites.html',
+      templateUrl: 'partials/contacts/favorites.html',
       controller: 'favoritesCtrl'
     })
-    .otherwise('/auth');
+    .otherwise('/login');
 });
