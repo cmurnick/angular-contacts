@@ -1,5 +1,15 @@
 "use strict";
 
+let isAuth = (AuthService) => new Promise ((resolve, reject) => {
+  if (AuthService.isAuthenticated()) {
+    resolve();
+  } else {
+    reject();
+  }
+});
+
+
+
 app.run(function(FIREBASE_CONFIG) {
 	firebase.initializeApp(FIREBASE_CONFIG);
 });
