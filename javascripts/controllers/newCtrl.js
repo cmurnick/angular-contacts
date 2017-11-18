@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("newCtrl", function($location, $scope, ContactService){
+app.controller("newCtrl", function($location, $rootScope, $scope, ContactService){
   $scope.contacts = [];
 
   const createContact = (contact) => {
@@ -13,7 +13,8 @@ app.controller("newCtrl", function($location, $scope, ContactService){
   		"state": contact.state,
   		"zip": contact.zip,
   		"email": contact.email,
-  		"phone": contact.phone
+  		"phone": contact.phone,
+      "uid": $rootScope.uid
   	};
 
   };
@@ -21,7 +22,7 @@ app.controller("newCtrl", function($location, $scope, ContactService){
   $scope.addContact = (inputData) => {
 		let newContact = createContact(inputData);
 		ContactService.postNewContact(newContact).then (() => {
-			$location.path('/view');
+			$location.path('/contacts/view');
 		}).catch((err) => {
 			console.log("error in postNewContact", err);
 		});

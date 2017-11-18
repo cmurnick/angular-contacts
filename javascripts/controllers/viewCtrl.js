@@ -1,17 +1,26 @@
 'use strict';
 
-app.controller("viewCtrl", function($scope, ContactService){
-  $scope.controller = [];
+app.controller("viewCtrl", function($rootScope, $scope, ContactService){
+  $scope.contacts = [];
 
-  const showContactsInView = () => {
-  	ContactService.getViewedContacts().then((results) =>{
-				$scope.contacts = results.data.results;
-			console.log("contacts?", results.data.results);
+  const getContacts = () => {
+		ContactService.getViewedContacts($rootScope.uid).then((results) => {
+			$scope.contacts = results;
 		}).catch((err) => {
-			console.log("error in searchcontacts", err);
+			console.log("error in getfuckingMovies", err);
 		});
-		};
-		showContactsInView();
-	});
 
- 
+	};
+
+	getContacts();
+
+	$scope.deleteContact = (contactId) => {
+		console.log("in Delete Contacts");
+		ContactService.deleteContact(contactId).then((result) => {
+			console.log("deleted?", result);
+			getContacts();
+		}).catch((err) => {
+			console.log("error in DeleteMovie", err);
+		});
+	};
+ });
