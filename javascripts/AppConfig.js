@@ -42,7 +42,6 @@ app.config(function($routeProvider){
     .when("/login", {
       templateUrl: 'partials/login.html',
       controller: 'loginCtrl'
-
     })
     .when("/contacts/view", {
       templateUrl: 'partials/contacts/view.html',
@@ -59,5 +58,22 @@ app.config(function($routeProvider){
       controller: 'favoritesCtrl',
        resolve: {isAuth}
     })
+    .when("/contact/:id", {
+      templateUrl: 'partials/contacts/contact_detail.html',
+      controller:'contactDetailCtrl',
+      resolve: {isAuth}
+    })
+    .when("/contacts/edit/:id", {
+      templateUrl: 'partials/contacts/edit.html',
+      controller: 'editCtrl',
+      resolve:{isAuth}
+    })
     .otherwise('/login');
 });
+
+
+
+
+
+
+

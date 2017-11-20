@@ -9,9 +9,9 @@ app.service("ContactService", function($http, $q, FIREBASE_CONFIG) {
 			 		
 			 		Object.keys(fbContacts).forEach((key) => {
                     fbContacts[key].id = key; 
-                    if(!fbContacts[key].favorite){
+                    // if(!fbContacts[key].favorite){
                     contacts.push(fbContacts[key]);
-                	}
+                	// }
                 	resolve(contacts);
               	});
 			 	}).catch((err) => {
@@ -72,8 +72,11 @@ app.service("ContactService", function($http, $q, FIREBASE_CONFIG) {
 
 		};
 
+		const getSingleContact = (contactId)=> {
+				return $http.get(`${FIREBASE_CONFIG.databaseURL}/contacts/${contactId}.json`);
+			};
 
-		return{getViewedContacts, postNewContact, deleteContact, getFavoriteContacts, createContactObject, updateContact};
+		return{getViewedContacts, postNewContact, deleteContact, getFavoriteContacts, createContactObject, updateContact, getSingleContact};
 
 });
 		

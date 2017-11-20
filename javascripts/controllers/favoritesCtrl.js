@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("favoritesCtrl", function($rootScope, $scope, ContactService){
+app.controller("favoritesCtrl", function($location, $rootScope, $scope, ContactService){
   $scope.controller = "favoritesCtrl";
 
   const getContacts = () => {
@@ -36,7 +36,7 @@ app.controller("favoritesCtrl", function($rootScope, $scope, ContactService){
 	// 	      console.log("error in updateFavorite", err);
 	// 	    });
 	//   }; 
-	  
+
 	$scope.switchFavorite = (contact, contactId) => {
 		contact.favorite = false;
 		let updatedContact = ContactService.createContactObject(contact);
@@ -49,7 +49,10 @@ app.controller("favoritesCtrl", function($rootScope, $scope, ContactService){
 		});	
 	};
 
-	  
+	  $scope.contactDetail = (contactId) => {
+		$location.path(`/contact/${contactId}`);
+		console.log("path working:", contactId);
+	};
 });
 
 
