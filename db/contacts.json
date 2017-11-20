@@ -10,7 +10,8 @@
 			"zip": "37062",
 			"email": "caitlinmurnick@gmail.com",
 			"phone": "630-333-6424",
-			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73"
+			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73",
+			"favorite": false
 			},
 		"contact1": {
 			"firstName": "Hadleigh",
@@ -22,7 +23,8 @@
 			"zip": "37021",
 			"email": "hadleigh.tweedall@gmail.com",
 			"phone": "630-300-8015",
-			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73"
+			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73",
+			"favorite": false
 			},
 
 	  	"contact2": {
@@ -35,7 +37,8 @@
 			"zip": "37062",
 			"email": "Jason.hoster@yahoo.com",
 			"phone": "630-728-4341",
-			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73"
+			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73",
+			"favorite": false
 			},
 		"contact3": {
 			"firstName": "Craig",
@@ -47,7 +50,8 @@
 			"zip": "37002",
 			"email": "crowe@benefitcommunications.com",
 			"phone": "615-870-8202",
-			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73"
+			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73",
+			"favorite": false
 			},
 		"contact4": {
 			"firstName": "Mary",
@@ -59,7 +63,8 @@
 			"zip": "60439",
 			"email": "mmurnick@aol.com",
 			"phone": "630-251-3377",
-			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73"
+			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73",
+			"favorite": false
 			},
 		"contact5": {
 			"firstName": "Joe",
@@ -71,7 +76,8 @@
 			"zip": "60439",
 			"email": "jmurn@aol.com",
 			"phone": "630-251-0099",
-			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73"
+			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
+			"favorite": false
 
 			},
 		"contact6": {
@@ -84,7 +90,8 @@
 			"zip": "60546",
 			"email": "sarah.lofgren@hyatt.com",
 			"phone": "708-302-4746"	,
-			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73"
+			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
+			"favorite": false
 
 			},
 		"contact7": {
@@ -97,7 +104,8 @@
 			"zip": "37222",
 			"email": "wgleaves@benefitcommunications.com",
 			"phone": "615-870-8996",
-			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73"
+			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
+			"favorite": false
 
 			},
 		"contact8": {
@@ -110,8 +118,8 @@
 			"zip": "60640",
 			"email": "atillman@block.com",
 			"phone": "312-729-4341",
-			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73"
-
+			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
+			"favorite": false
 			},
 		"contact9": {
 			"firstName": "Loreen",
@@ -123,8 +131,8 @@
 			"zip": "37062",
 			"email": "lhospodar@google.com",
 			"phone": "630-562-8463",
-			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73"
-
+			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
+			"favorite": false
 			}
 		}
 }

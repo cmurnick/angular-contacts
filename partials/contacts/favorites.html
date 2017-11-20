@@ -1,4 +1,31 @@
 <div class="text-center" id="rated">
-  <h1>Hello My Favorites</h1>
-  {{controller}}
-</div>
+  <h1>My Favorites-hate this</h1>
+ 
+
+
+<div id="contacts">
+
+    <div ng-repeat="contact in contacts" class="col-sm-6 col-md-4 contact">
+      <div class="thumbnail">
+        	<div class="caption">
+        		<h1 class="title">{{contact.firstName}}</h1>
+            <h1 class="title">{{contact.lastName}}</h1>
+        		<h3 class="overview">{{contact.company}}</h3>   
+        		<h6 class="overview">{{contact.email}}</h3>   
+        		<p> {{contact.address}}</p>
+        		<p> {{contact.city}}, {{ contact.state}}  {{ contact.zip}}</p>
+        		<p> {{contact.phone}}</p>
+
+            <p>Favorite:
+              <i class="fa fa-star-o" aria-hidden="true" ng-click="switchFavorite(contact, contact.id)"></i>
+            </p>
+
+        		</div>
+		        
+		      
+          <button class="btn btn-primary delete" role="button" ng-click="deleteContact(contact.id)">Delete</button>
+       		
+     
+     </div>
+    </div>
+   </div>
