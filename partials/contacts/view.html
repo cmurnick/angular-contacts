@@ -1,4 +1,25 @@
-<div class="text-center" id="rated">
-  <h1>HelloView Contacts</h1>
-  {{controller}}
-</div>
+<div class="text-center" id="view">
+  <h1>Contacts</h1>
+
+
+<div id="contacts">
+
+    <div ng-repeat="contact in contacts" class="col-sm-6 col-md-4 contact">
+      <div class="thumbnail">
+        	<div class="caption">
+        		<h1 class="title">{{contact.firstName}}</h1>
+        		<h3 class="overview">{{contact.company}}</h3>   
+        		<h6 class="overview">{{contact.email}}</h3>   
+        		<p> {{contact.address}}</p>
+        		<p> {{contact.city}}, {{ contact.state}}  {{ contact.zip}}</p>
+        		<p> {{contact.phone}}</p>
+        		</div>
+		        
+		      
+          <button class="btn btn-primary delete" role="button" ng-click="deleteContact(contact.id)">Delete</button>
+       		
+     
+     </div>
+    </div>
+   </div>
+   </div>
