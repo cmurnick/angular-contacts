@@ -1,11 +1,14 @@
 <div class="text-center" id="rated">
   <h1>My Favorites</h1>
  
-
+<div class="input-group input-group-lg col-xs-6 col-xs-offset-3">
+    <span class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span>
+    <input type="text" class="form-control" placeholder="Find a movie" ng-model="searchText">
+  </div>
 
 <div id="contacts">
 
-    <div ng-repeat="contact in contacts" class="col-sm-6 col-md-4 contact">
+    <div ng-repeat="contact in contacts | filter: searchText" class="col-sm-6 col-md-4 contact">
       <div class="thumbnail">
         <button class="btn btn-primary detail" role="button"><i class="fa fa-pencil-square-o" aria-hidden="true" ng-click="editContact(contact.id)"></i></button>
       	<button class="btn btn-primary detail" role="button"><i class="fa fa-search fa-lg" aria-hidden="true" ng-click="contactDetail(contact.id)"></i></button>
