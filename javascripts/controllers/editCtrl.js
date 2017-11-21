@@ -6,7 +6,7 @@ app.controller("editCtrl", function($rootScope, $location, $routeParams, $scope,
 //was addContact from newCtrl.js
   $scope.editContact = (inputData) => {
     inputData.uid = $rootScope.uid;
-    inputData.favorite = false;
+ 
     
 		let newContact = ContactService.createContactObject(inputData);
 		ContactService.postNewContact(newContact).then (() => {

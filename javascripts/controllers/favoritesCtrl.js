@@ -53,6 +53,11 @@ app.controller("favoritesCtrl", function($location, $rootScope, $scope, ContactS
 		$location.path(`/contact/${contactId}`);
 		console.log("path working:", contactId);
 	};
+
+	$scope.editContact = (contactId) => {
+		$location.path(`/contact/edit/${contactId}`);
+		console.log("path working:", contactId);
+	};
 });
 
 
