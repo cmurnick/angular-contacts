@@ -19,23 +19,12 @@ app.controller("contactDetailCtrl", function($routeParams, $scope, ContactServic
 	getContact();
 
 
-	$scope.switchFavorite = (contact, contactId) => {
-		contact.favorite = true;
+	$scope.switchFavorite = (contact, isFavorited) => {
+		contact.favorite = isFavorited;
 		let updatedContact = ContactService.createContactObject(contact);
-		ContactService.updateContact(updatedContact, $routeParams.id).then((result) => {
-			getContact();
-		}).catch((err) => {
-			console.log("error in update contact", err);
-		});
-	};
-
-	$scope.switchToNotFavorite = (contact, contactId) => {
-		contact.favorite = false;
-		let updatedContact = ContactService.createContactObject(contact);
-		ContactService.updateContact(updatedContact, $routeParams.id).then((result) => {
+		ContactService.updateContact(updatedContact, contact.id).then((result) => {
 			console.log("is switchFavorite working", result);
-			getContact();
-			// favoriteStarChange();
+			getContacts();
 		}).catch((err) => {
 			console.log("error in update movie", err);
 		});	

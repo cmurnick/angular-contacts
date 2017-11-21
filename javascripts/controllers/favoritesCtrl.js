@@ -24,8 +24,8 @@ app.controller("favoritesCtrl", function($location, $rootScope, $scope, ContactS
 	};
 
 
-	$scope.switchFavorite = (contact, contactId) => {
-		contact.favorite = false;
+	$scope.switchFavorite = (contact, isFavorited) => {
+		contact.favorite = isFavorited;
 		let updatedContact = ContactService.createContactObject(contact);
 		ContactService.updateContact(updatedContact, contact.id).then((result) => {
 			console.log("is switchFavorite working", result);

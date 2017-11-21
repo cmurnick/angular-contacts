@@ -56,7 +56,8 @@ app.service("ContactService", function($http, $q, FIREBASE_CONFIG) {
 				"email": contact.email,
 				"phone": contact.phone,
 				"uid": contact.uid,
-				"favorite": contact.favorite
+				"favorite": contact.favorite,
+				"relationship": contact.relationship
 			};
 		};
 

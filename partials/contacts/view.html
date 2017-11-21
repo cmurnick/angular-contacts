@@ -3,7 +3,7 @@
 
 <div class="input-group input-group-lg col-xs-6 col-xs-offset-3">
     <span class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span>
-    <input type="text" class="form-control" placeholder="Find a movie" ng-model="searchText">
+    <input type="text" class="form-control" placeholder="Find a contact" ng-model="searchText">
   </div>
 
 <div id="contacts">
@@ -28,11 +28,11 @@
 
 
             <p ng-if="!contact.favorite">
-                <i class="fa fa-star-o fa-lg" aria-hidden="true" ng-click="switchFavorite(contact, contact.id)"></i>
+                <i class="fa fa-star-o fa-lg" aria-hidden="true" ng-click="switchFavorite(contact, true)"></i>
               </p>
 
             <p ng-if="contact.favorite">
-                <i class="fa fa-star fa-lg" aria-hidden="true" ng-click="switchToNotFavorite(contact, contact.id)"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true" ng-click="switchFavorite(contact,  false)"></i>
             </p>
 
             

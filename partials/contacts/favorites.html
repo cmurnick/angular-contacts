@@ -24,12 +24,12 @@
         		<p> {{contact.phone}}</p>
 
             <p ng-if="!contact.favorite">
-                <i class="fa fa-star-o fa-lg" aria-hidden="true" ng-click="switchFavorite(contact, contact.id)"></i>
+                <i class="fa fa-star-o fa-lg" aria-hidden="true" ng-click="switchFavorite(contact, true)"></i>
               </p>
             
 
             <p ng-if="contact.favorite">
-                <i class="fa fa-star fa-lg" aria-hidden="true" ng-click="switchFavorite(contact, contact.id)"></i>
+                <i class="fa fa-star fa-lg" aria-hidden="true" ng-click="switchFavorite(contact, false)"></i>
             </p>
 
         		</div>

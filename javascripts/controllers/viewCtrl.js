@@ -26,8 +26,8 @@ app.controller("viewCtrl", function($location, $rootScope, $scope, ContactServic
 	};
 
 	
-	$scope.switchFavorite = (contact, contactId) => {
-		contact.favorite = true;
+	$scope.switchFavorite = (contact, isFavorited) => {
+		contact.favorite = isFavorited;
 		let updatedContact = ContactService.createContactObject(contact);
 		ContactService.updateContact(updatedContact, contact.id).then((result) => {
 			console.log("is switchFavorite working", result);
@@ -38,18 +38,7 @@ app.controller("viewCtrl", function($location, $rootScope, $scope, ContactServic
 		});	
 	};
 
-	$scope.switchToNotFavorite = (contact, contactId) => {
-		contact.favorite = false;
-		let updatedContact = ContactService.createContactObject(contact);
-		ContactService.updateContact(updatedContact, contact.id).then((result) => {
-			console.log("is switchFavorite working", result);
-			getContacts();
-			// favoriteStarChange();
-		}).catch((err) => {
-			console.log("error in update movie", err);
-		});	
-	};
-
+	
 	 $scope.contactDetail = (contactId) => {
 		$location.path(`/contact/${contactId}`);
 		console.log("path working:", contactId);
