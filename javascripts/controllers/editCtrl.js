@@ -26,7 +26,7 @@ app.controller("editCtrl", function($rootScope, $location, $routeParams, $scope,
 		ContactService.updateContact(updatedContact, $routeParams.id).then((result) => {
 			console.log("is updateEditedContact working", result);
 			getContactInfo();
-			// favoriteStarChange();
+			$location.path('/contacts/view');
 		}).catch((err) => {
 			console.log("error in update movie", err);
 		});	
