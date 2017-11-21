@@ -12,12 +12,14 @@ app.service("ContactService", function($http, $q, FIREBASE_CONFIG) {
                     // if(!fbContacts[key].favorite){
                     contacts.push(fbContacts[key]);
                 	// }
-                	resolve(contacts);
+                	
               	});
+			 		resolve(contacts);
 			 	}).catch((err) => {
 			 		reject(err);
 			 		console.log("getViewedContacts screwed", err);
 			 });
+
 			 });
 	 		};
 			

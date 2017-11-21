@@ -24,19 +24,6 @@ app.controller("favoritesCtrl", function($location, $rootScope, $scope, ContactS
 	};
 
 
-	// $scope.updateFavorite = (contact) => {
-	// 	    if (!contact.favorite) {
-	// 	      contact.favorite = true;
-	// 	    } else {
-	// 	      contact.favorite = false;
-	// 	    }
-	// 	    let updatedContact = ContactService.createContactObject(contact);
-	// 	    ContactService.updateContact(updatedContact, contact.id).then(()=>{
-	// 	    }).catch((err)=>{
-	// 	      console.log("error in updateFavorite", err);
-	// 	    });
-	//   }; 
-
 	$scope.switchFavorite = (contact, contactId) => {
 		contact.favorite = false;
 		let updatedContact = ContactService.createContactObject(contact);
