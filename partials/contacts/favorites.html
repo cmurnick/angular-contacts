@@ -1,9 +1,9 @@
 <div class="text-center" id="rated">
-  <h1>My Favorites</h1>
+  <h1 class="mainHeader">My Favorites</h1>
  
-<div class="input-group input-group-lg col-xs-6 col-xs-offset-3">
+<div class="space input-group input-group-lg col-xs-6 col-xs-offset-3">
     <span class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span>
-    <input type="text" class="form-control" placeholder="Find a movie" ng-model="searchText">
+    <input type="text" class="form-control" placeholder="Find a contact" ng-model="searchText">
   </div>
 
 <div id="contacts">
@@ -18,10 +18,10 @@
         		<h1 class="title">{{contact.firstName}}</h1>
             <h1 class="title">{{contact.lastName}}</h1>
         		<h3 class="overview">{{contact.company}}</h3>   
-        		<h6 class="overview">{{contact.email}}</h3>   
+        		<!-- <h6 class="overview">{{contact.email}}</h3>   
         		<p> {{contact.address}}</p>
         		<p> {{contact.city}}, {{ contact.state}}  {{ contact.zip}}</p>
-        		<p> {{contact.phone}}</p>
+        		<p> {{contact.phone}}</p> -->
 
             <p ng-if="!contact.favorite">
                 <i class="fa fa-star-o fa-lg" aria-hidden="true" ng-click="switchFavorite(contact, true)"></i>

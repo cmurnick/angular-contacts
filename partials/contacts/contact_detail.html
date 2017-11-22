@@ -1,12 +1,18 @@
 <div>
+	<div id="contacts" class="boxDetails col-xs-8 col-xs-offset-2">
 
-	<div class="col-xs-8">
-		<h3>{{contact.firstName}}</h3>
-		<p>{{contact.company}}</p>
-		<p>{{contact.email}}</p>
-		<p>{{contact.address}} </p>
-	<!-- 	{{contact.city}}, {{contact.state}} {{ zip}} -->
-		<p>{{contact.phone}}</p>
+    <div" class="contactDetails text-center">
+      <div>
+				<h1 class="mainHeader">{{contact.firstName}} {{contact.lastName}}</h1>
+				<h2 class="companyName">{{contact.company}}</h2>		
+				<h5>{{contact.address}} </h5>
+				<h5>{{contact.city}}, {{contact.state}} {{contact.zip}}</h5>
+			</div>
+			<div class="bottomData">
+				<h5>{{contact.phone}}</h5>
+				<h5>{{contact.email}}</h5>
+				<h5>How I know you: {{contact.relationship}}</h5>
+			</div>
 
 		
 	
