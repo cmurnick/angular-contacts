@@ -1,0 +1,22 @@
+<div>
+
+	<div class="col-xs-8">
+		<h3>{{contact.firstName}}</h3>
+		<p>{{contact.company}}</p>
+		<p>{{contact.email}}</p>
+		<p>{{contact.address}} </p>
+	<!-- 	{{contact.city}}, {{contact.state}} {{ zip}} -->
+		<p>{{contact.phone}}</p>
+
+		
+	
+        <p ng-if="!contact.favorite">
+            <i class="fa fa-star-o fa-lg" aria-hidden="true" ng-click="switchFavorite(contact, contact.id)"></i>
+          </p>
+        
+        <p ng-if="contact.favorite">
+                <i class="fa fa-star fa-lg" aria-hidden="true" ng-click="switchToNotFavorite(contact, contact.id)"></i>
+            </p>
+
+	</div>
+</div>
