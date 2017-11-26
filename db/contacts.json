@@ -28,7 +28,6 @@
 			"favorite": false,
 			"relationship": "Sibling"
 			},
-
 	  	"contact2": {
 			"firstName": "Jason",
 			"lastName": "Hoster",
@@ -56,7 +55,6 @@
 			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73",
 			"favorite": false,
 			"relationship": "Co-Worker"
-
 			},
 		"contact4": {
 			"firstName": "Mary",
@@ -71,7 +69,6 @@
 			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73",
 			"favorite": false,
 			"relationship": "Parent"
-
 			},
 		"contact5": {
 			"firstName": "Joe",
@@ -86,8 +83,6 @@
 			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
 			"favorite": false,
 			"relationship": "Parent"
-
-
 			},
 		"contact6": {
 			"firstName": "Sarah",
@@ -102,7 +97,6 @@
 			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
 			"favorite": false,
 			"relationship": "Friend"
-
 			},
 		"contact7": {
 			"firstName": "Wendy",
@@ -131,7 +125,6 @@
 			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
 			"favorite": false,
 			"relationship": "Friend"
-
 			},
 		"contact9": {
 			"firstName": "Loreen",
@@ -146,7 +139,6 @@
 			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
 			"favorite": false,
 			"relationship": "Friend"
-
 			}
 		}
 }

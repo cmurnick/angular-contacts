@@ -6,7 +6,6 @@ app.controller("loginCtrl", function($location, $rootScope, $scope, AuthService)
       $rootScope.uid = result.user.uid;
       $scope.$apply(() =>{
         $location.url('/view');
-        console.log("working??", result.user.uid);
       });
     }).catch((err) =>{
       console.log("error in authenticateGoogle", err);

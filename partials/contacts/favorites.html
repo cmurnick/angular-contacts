@@ -12,29 +12,17 @@
       <div class="thumbnail">
         <button class="btn btn-primary detail" role="button"><i class="fa fa-pencil-square-o" aria-hidden="true" ng-click="editContact(contact.id)"></i></button>
       	<button class="btn btn-primary detail" role="button"><i class="fa fa-search fa-lg" aria-hidden="true" ng-click="contactDetail(contact.id)"></i></button>
-        
-
         	<div class="caption">
         		<h1 class="title">{{contact.firstName}}</h1>
             <h1 class="title">{{contact.lastName}}</h1>
         		<h3 class="overview">{{contact.company}}</h3>   
-        		<!-- <h6 class="overview">{{contact.email}}</h3>   
-        		<p> {{contact.address}}</p>
-        		<p> {{contact.city}}, {{ contact.state}}  {{ contact.zip}}</p>
-        		<p> {{contact.phone}}</p> -->
-
             <p ng-if="!contact.favorite">
                 <i class="fa fa-star-o fa-lg" aria-hidden="true" ng-click="switchFavorite(contact, true)"></i>
               </p>
-            
-
             <p ng-if="contact.favorite">
                 <i class="fa fa-star fa-lg" aria-hidden="true" ng-click="switchFavorite(contact, false)"></i>
             </p>
-
         		</div>
-		        
-		      
           <button class="btn btn-primary delete" role="button" ng-click="deleteContact(contact.id)">Delete</button>
        		
      

@@ -2,7 +2,6 @@
 
 app.controller("contactDetailCtrl", function($routeParams, $scope, ContactService) {
 	$scope.contact = {};
-
 	console.log("Contactid", $routeParams.id);
 
 	const getContact = () => {
@@ -13,11 +12,8 @@ app.controller("contactDetailCtrl", function($routeParams, $scope, ContactServic
 			console.log("Err in Getsinglecontact", err);
 			});
 		};
-	
 			
-
 	getContact();
-
 
 	$scope.switchFavorite = (contact, isFavorited) => {
 		contact.favorite = isFavorited;
@@ -29,8 +25,6 @@ app.controller("contactDetailCtrl", function($routeParams, $scope, ContactServic
 			console.log("error in update movie", err);
 		});	
 	};
-
-
 
 	$scope.contactChange = (event, contact) => {
 		console.log("event", event);

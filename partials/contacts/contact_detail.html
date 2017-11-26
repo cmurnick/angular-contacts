@@ -13,10 +13,7 @@
 				<h5>{{contact.email}}</h5>
 				<h5>How I know you: {{contact.relationship}}</h5>
 			</div>
-
-		
-	
-        <p ng-if="!contact.favorite">
+	      <p ng-if="!contact.favorite">
             <i class="fa fa-star-o fa-lg" aria-hidden="true" ng-click="switchFavorite(contact, true)"></i>
           </p>
         
