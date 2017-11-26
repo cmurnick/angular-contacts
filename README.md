@@ -4,7 +4,7 @@
 angular-contacts-389b6.firebaseapp.com
 
 ## Screenshot:
-<img src="./images/angular-contacts.png">
+![alt text](images/Angular-Contacts.png "Description goes here")
 
 
 ## Description: 
