@@ -1,11 +1,9 @@
 # angular-contacts
 
-
 angular-contacts-389b6.firebaseapp.com
 
 ## Screenshot:
 ![alt text](images/Angular-Contacts.png "Description goes here")
-
 
 ## Description: 
 This project utilized my new skills in Angular. I created a contact directory of my personal contacts.  The functionality of the app includes:
