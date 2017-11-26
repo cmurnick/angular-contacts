@@ -35,8 +35,6 @@ app.run(function($location, $rootScope, FIREBASE_CONFIG, AuthService) {
   });
 });
 
-
-
 app.config(function($routeProvider){
   $routeProvider
     .when("/login", {
@@ -51,12 +49,12 @@ app.config(function($routeProvider){
     .when("/contacts/new", {
       templateUrl: 'partials/contacts/new.html',
       controller: 'newCtrl',
-       resolve: {isAuth}
+      resolve: {isAuth}
     })
     .when("/contacts/favorites", {
       templateUrl: 'partials/contacts/favorites.html',
       controller: 'favoritesCtrl',
-       resolve: {isAuth}
+      resolve: {isAuth}
     })
     .when("/contact/:id", {
       templateUrl: 'partials/contacts/contact_detail.html',

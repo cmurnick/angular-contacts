@@ -1,5 +1,53 @@
-body {
-  background: #42f4eb; }
+#googleSpacing {
+  margin-top: 30px; }
 
-.fa-star {
-  fill: blue; }
+body {
+  font-family: 'Arapey', serif;
+  color: #5f6266;
+  background: #c2fcf6; }
+
+.top {
+  color: #5f6266; }
+
+.title {
+  color: #5f6266;
+  font-size: 36px;
+  margin-top: 10px;
+  font-weight: bold; }
+
+.space {
+  margin-bottom: 30px; }
+
+.navbar {
+  background: #e5e6e8;
+  border-bottom: 2px solid lightgray; }
+
+.mainHeader {
+  font-size: 50px;
+  font-weight: bold;
+  color: #5f6266; }
+
+.thumbnail {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center; }
+
+.boxDetails {
+  margin-top: 100px;
+  background: white;
+  border-radius: 10%;
+  border: 2px solid lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.companyName {
+  margin-top: 0; }
+
+.bottomData {
+  margin-top: 50px; }
+
+.contactDetails
+h1 {
+  font-size: 60px; }
+
+h2 {
+  font-size: 40px; }

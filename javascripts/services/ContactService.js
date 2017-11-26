@@ -9,17 +9,13 @@ app.service("ContactService", function($http, $q, FIREBASE_CONFIG) {
 			 		
 			 		Object.keys(fbContacts).forEach((key) => {
                     fbContacts[key].id = key; 
-                    // if(!fbContacts[key].favorite){
                     contacts.push(fbContacts[key]);
-                	// }
-                	
               	});
 			 		resolve(contacts);
 			 	}).catch((err) => {
 			 		reject(err);
 			 		console.log("getViewedContacts screwed", err);
 			 });
-
 			 });
 	 		};
 			
@@ -27,7 +23,6 @@ app.service("ContactService", function($http, $q, FIREBASE_CONFIG) {
 		 let contacts = [];
 		 return $q((resolve, reject) => {
 		 	$http.get(`${FIREBASE_CONFIG.databaseURL}/contacts.json?orderBy="uid"&equalTo="${userUid}"`).then((results) => {
-		 		console.log("results", results);
 		 		let fbContacts = results.data;
 
 		 		Object.keys(fbContacts).forEach((key) => {
@@ -56,18 +51,19 @@ app.service("ContactService", function($http, $q, FIREBASE_CONFIG) {
 				"email": contact.email,
 				"phone": contact.phone,
 				"uid": contact.uid,
-				"favorite": contact.favorite
+				"favorite": contact.favorite,
+				"relationship": contact.relationship
 			};
 		};
 
-		 const postNewContact = (NewContact) => {
+		const postNewContact = (NewContact) => {
 		 	return $http.post(`${FIREBASE_CONFIG.databaseURL}/contacts.json`, JSON.stringify(NewContact));
 	
 		};
 
 		const deleteContact = (contactId) => {
 		return $http.delete(`${FIREBASE_CONFIG.databaseURL}/contacts/${contactId}.json`);
-	};
+		};
 
 		const updateContact = (contact, contactId) => {
 			return $http.put(`${FIREBASE_CONFIG.databaseURL}/contacts/${contactId}.json`, JSON.stringify(contact));
@@ -76,7 +72,7 @@ app.service("ContactService", function($http, $q, FIREBASE_CONFIG) {
 
 		const getSingleContact = (contactId)=> {
 				return $http.get(`${FIREBASE_CONFIG.databaseURL}/contacts/${contactId}.json`);
-			};
+		};
 
 		return{getViewedContacts, postNewContact, deleteContact, getFavoriteContacts, createContactObject, updateContact, getSingleContact};
 

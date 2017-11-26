@@ -1,7 +1,7 @@
 {
 	"contacts": {
 		"contact0": {
-			"firstName": "Caitlin",
+			"firstName": "Sarah",
 			"lastName": "Murnick",
 			"company": "BCI",
 			"address": "7810 Chester Rd",
@@ -11,7 +11,8 @@
 			"email": "caitlinmurnick@gmail.com",
 			"phone": "630-333-6424",
 			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73",
-			"favorite": false
+			"favorite": false,
+			"relationship": "other"
 			},
 		"contact1": {
 			"firstName": "Hadleigh",
@@ -24,9 +25,9 @@
 			"email": "hadleigh.tweedall@gmail.com",
 			"phone": "630-300-8015",
 			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73",
-			"favorite": false
+			"favorite": false,
+			"relationship": "Sibling"
 			},
-
 	  	"contact2": {
 			"firstName": "Jason",
 			"lastName": "Hoster",
@@ -38,7 +39,8 @@
 			"email": "Jason.hoster@yahoo.com",
 			"phone": "630-728-4341",
 			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73",
-			"favorite": false
+			"favorite": false,
+			"relationship": "Spouse/Boyfriend"
 			},
 		"contact3": {
 			"firstName": "Craig",
@@ -51,7 +53,8 @@
 			"email": "crowe@benefitcommunications.com",
 			"phone": "615-870-8202",
 			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73",
-			"favorite": false
+			"favorite": false,
+			"relationship": "Co-Worker"
 			},
 		"contact4": {
 			"firstName": "Mary",
@@ -64,7 +67,8 @@
 			"email": "mmurnick@aol.com",
 			"phone": "630-251-3377",
 			"uid": "kcJJMyN5KFU8oR39ZbyyYaiSoV73",
-			"favorite": false
+			"favorite": false,
+			"relationship": "Parent"
 			},
 		"contact5": {
 			"firstName": "Joe",
@@ -77,8 +81,8 @@
 			"email": "jmurn@aol.com",
 			"phone": "630-251-0099",
 			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
-			"favorite": false
-
+			"favorite": false,
+			"relationship": "Parent"
 			},
 		"contact6": {
 			"firstName": "Sarah",
@@ -91,8 +95,8 @@
 			"email": "sarah.lofgren@hyatt.com",
 			"phone": "708-302-4746"	,
 			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
-			"favorite": false
-
+			"favorite": false,
+			"relationship": "Friend"
 			},
 		"contact7": {
 			"firstName": "Wendy",
@@ -105,8 +109,8 @@
 			"email": "wgleaves@benefitcommunications.com",
 			"phone": "615-870-8996",
 			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
-			"favorite": false
-
+			"favorite": false,
+			"relationship": "Co-Worker"
 			},
 		"contact8": {
 			"firstName": "Amy",
@@ -119,7 +123,8 @@
 			"email": "atillman@block.com",
 			"phone": "312-729-4341",
 			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
-			"favorite": false
+			"favorite": false,
+			"relationship": "Friend"
 			},
 		"contact9": {
 			"firstName": "Loreen",
@@ -132,7 +137,8 @@
 			"email": "lhospodar@google.com",
 			"phone": "630-562-8463",
 			"uid": "xVkxPPm5TKTF2HmkQL5pfecrGo73",
-			"favorite": false
+			"favorite": false,
+			"relationship": "Friend"
 			}
 		}
 }
